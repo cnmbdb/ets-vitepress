@@ -11,11 +11,23 @@ export default defineConfig({
   ],
 
   themeConfig: {
-    logo: '/logo.png',
+    logo: {
+      light: '/logo.png',
+      dark: '/logo.png'
+    },
+    siteTitle: 'TGNL Admin',
     
     nav: [
       { text: '首页', link: '/' },
-      { text: '快速开始', link: '/guide/getting-started' },
+      { 
+        text: '指南', 
+        items: [
+          { text: '什么是 TGNL Admin?', link: '/guide/what-is-tgnl-admin' },
+          { text: '快速开始', link: '/guide/getting-started' },
+          { text: '项目介绍', link: '/guide/introduction' },
+          { text: '环境要求', link: '/guide/requirements' }
+        ]
+      },
       { text: '功能模块', link: '/modules/' },
       { text: '部署指南', link: '/deployment/' },
       { text: 'API 文档', link: '/api/' }
@@ -26,6 +38,7 @@ export default defineConfig({
         {
           text: '入门指南',
           items: [
+            { text: '什么是 TGNL Admin?', link: '/guide/what-is-tgnl-admin' },
             { text: '快速开始', link: '/guide/getting-started' },
             { text: '项目介绍', link: '/guide/introduction' },
             { text: '环境要求', link: '/guide/requirements' }
@@ -75,8 +88,21 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/yourusername/nlbot-vitepress' }
+      { icon: 'github', link: 'https://github.com/cnmbdb/nlbot-vitepress' }
     ],
+    
+    editLink: {
+      pattern: 'https://github.com/cnmbdb/nlbot-vitepress/edit/main/docs/:path',
+      text: '在 GitHub 上编辑此页'
+    },
+    
+    lastUpdated: {
+      text: '最后更新于',
+      formatOptions: {
+        dateStyle: 'short',
+        timeStyle: 'medium'
+      }
+    },
 
     footer: {
       message: '基于 VitePress 构建',
