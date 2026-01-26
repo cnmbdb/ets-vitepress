@@ -1,7 +1,4 @@
 {
-  "assets": {
-    "directory": ".output/assets"
-  },
   "rewrite": [
     {
       "from": "/*",

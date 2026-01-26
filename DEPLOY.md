@@ -28,7 +28,9 @@ git push -u origin main
 4. **重要配置**：
    - **源仓库**: 选择你的 GitHub 仓库 `nlbot-vitepress`
    - **构建命令**: `npm install && npm run build`
-   - **输出目录**: `docs/.vitepress/dist`
+   - **输出目录**: `docs/.vitepress/dist`（必须填写，这是包含 index.html 的目录）
+   - **静态资源目录**: 留空（系统会自动识别）
+   - **函数文件路径**: 留空
    - **Node 版本**: 18 或更高
    - **配置文件**: 项目根目录已有 `esa.jsonc` 配置文件（包含路由重写规则）
 5. 保存并部署

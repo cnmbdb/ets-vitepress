@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vitepress dev docs",
-    "build": "vitepress build docs && mkdir -p .output && cp -r docs/.vitepress/dist/* .output/",
+    "build": "vitepress build docs",
     "preview": "vitepress preview docs"
   },
   "devDependencies": {
