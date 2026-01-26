@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   appearance: true,
-  title: 'TGNL Admin 文档',
+  title: 'TGNL Admin',
   description: 'Telegram Bot 管理后台完整文档',
   base: '/',
   
@@ -24,19 +24,28 @@ export default defineConfig({
     },
     
     nav: [
-      { text: '首页', link: '/' },
       { 
         text: '指南', 
         items: [
           { text: '什么是 TGNL Admin?', link: '/guide/what-is-tgnl-admin' },
           { text: '快速开始', link: '/guide/getting-started' },
           { text: '项目介绍', link: '/guide/introduction' },
-          { text: '环境要求', link: '/guide/requirements' }
+          { text: '环境要求', link: '/guide/requirements' },
         ]
       },
-      { text: '功能模块', link: '/modules/' },
-      { text: '部署指南', link: '/deployment/' },
-      { text: 'API 文档', link: '/api/' }
+      { 
+        text: '参考', 
+        items: [
+          { text: '功能模块', link: '/modules/' },
+          { text: '部署指南', link: '/deployment/' },
+          { text: 'API 文档', link: '/api/' }
+        ]
+      },
+      { 
+        text: 'TGNL Admin', 
+        link: 'https://github.com/cnmbdb/tgnl-admin',
+        target: '_self'
+      }
     ],
     
     sidebarMenuLabel: '菜单',
@@ -53,7 +62,7 @@ export default defineConfig({
             { text: '什么是 TGNL Admin?', link: '/guide/what-is-tgnl-admin' },
             { text: '快速开始', link: '/guide/getting-started' },
             { text: '项目介绍', link: '/guide/introduction' },
-            { text: '环境要求', link: '/guide/requirements' }
+            { text: '环境要求', link: '/guide/requirements' },
           ]
         }
       ],
