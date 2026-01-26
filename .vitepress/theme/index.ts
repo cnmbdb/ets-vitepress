@@ -10,8 +10,7 @@ export default {
   },
   Layout() {
     return h(DefaultTheme.Layout, null, {
-      'nav-bar-title-after': () => h(VersionSelector),
-      'nav-screen-content-after': () => h(LanguageSelector)
+      'nav-bar-content-after': () => h(VersionSelector)
     })
   }
 } satisfies Theme
@@ -39,21 +38,5 @@ function VersionSelector() {
         selected: v.link === '/'
       }, v.text)
     ))
-  ])
-}
-
-// 语言选择器组件
-function LanguageSelector() {
-  return h('div', { class: 'language-selector' }, [
-    h('a', {
-      href: '/',
-      class: 'lang-link active',
-      'aria-label': '简体中文'
-    }, '文'),
-    h('a', {
-      href: '/en/',
-      class: 'lang-link',
-      'aria-label': 'English'
-    }, 'EN')
   ])
 }

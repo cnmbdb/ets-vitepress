@@ -193,13 +193,6 @@
   background: rgba(82, 82, 89, 0.2);
 }
 
-/* 语言选择器样式 */
-.language-selector {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin-left: 16px;
-}
 
 .lang-link {
   display: inline-flex;
