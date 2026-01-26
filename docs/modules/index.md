@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # 功能模块
 
 TGNL Admin 提供了丰富的功能模块，帮助您全面管理 Telegram Bot。

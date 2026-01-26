@@ -1,1 +1,0 @@
-import{_ as e,o as l,c as t,ae as i}from"./chunks/framework.BD9pLfSD.js";const g=JSON.parse('{"title":"TGNL Admin 文档","description":"","frontmatter":{},"headers":[],"relativePath":"index.md","filePath":"index.md"}'),r={name:"index.md"};function o(n,a,h,s,d,u){return l(),t("div",null,[...a[0]||(a[0]=[i("",23)])])}const c=e(r,[["render",o]]);export{g as __pageData,c as default};

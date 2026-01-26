@@ -1,1 +1,0 @@
-import{_ as i,o as a,c as n,ae as t}from"./chunks/framework.BD9pLfSD.js";const o=JSON.parse('{"title":"用户接口","description":"","frontmatter":{},"headers":[],"relativePath":"api/users.md","filePath":"api/users.md"}'),h={name:"api/users.md"};function l(e,s,p,k,r,d){return a(),n("div",null,[...s[0]||(s[0]=[t("",40)])])}const c=i(h,[["render",l]]);export{o as __pageData,c as default};

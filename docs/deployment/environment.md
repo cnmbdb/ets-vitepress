@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # 环境配置
 
 本文档介绍 TGNL Admin 项目的环境配置。

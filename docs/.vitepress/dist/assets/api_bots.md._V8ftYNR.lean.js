@@ -1,1 +1,0 @@
-import{_ as i,o as a,c as n,ae as t}from"./chunks/framework.BD9pLfSD.js";const r=JSON.parse('{"title":"机器人接口","description":"","frontmatter":{},"headers":[],"relativePath":"api/bots.md","filePath":"api/bots.md"}'),h={name:"api/bots.md"};function l(p,s,e,k,d,E){return a(),n("div",null,[...s[0]||(s[0]=[t("",46)])])}const c=i(h,[["render",l]]);export{r as __pageData,c as default};

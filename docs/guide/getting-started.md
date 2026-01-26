@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # 快速开始
 
 本指南将帮助您快速启动 TGNL Admin 项目。

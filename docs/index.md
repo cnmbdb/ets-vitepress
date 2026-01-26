@@ -6,7 +6,7 @@ hero:
   text: "文档"
   tagline: Telegram Bot 管理后台完整文档系统
   image:
-    src: /logo.png
+    src: /logo.svg
     alt: TGNL Admin
   actions:
     - theme: brand
@@ -19,26 +19,147 @@ hero:
 features:
   - icon: 🤖
     title: 机器人管理
-    details: 轻松管理多个 Telegram 机器人，配置机器人参数和状态监控
+    details: 轻松管理多个 Telegram 机器人，配置机器人参数和状态监控，支持批量操作和自动化配置
   - icon: 👥
     title: 用户管理
-    details: 完整的用户信息查看和管理，用户数据统计和操作记录
+    details: 完整的用户信息查看和管理，用户数据统计和操作记录，支持用户搜索和筛选
   - icon: 📊
     title: 数据分析
-    details: 直观的数据统计和分析图表，实时监控系统运行状态
+    details: 直观的数据统计和分析图表，实时监控系统运行状态，支持数据导出和报表生成
   - icon: 💰
     title: 订单管理
-    details: 订单列表、订单详情、订单处理和退款管理
+    details: 订单列表、订单详情、订单处理和退款管理，支持多种支付方式和订单状态跟踪
   - icon: ⚙️
     title: 命令配置
-    details: 灵活配置机器人命令，设置命令响应和权限
+    details: 灵活配置机器人命令，设置命令响应和权限，支持命令模板和批量导入
   - icon: 🔑
     title: 关键词回复
-    details: 自定义关键词自动回复规则，支持精确匹配和模糊匹配
+    details: 自定义关键词自动回复规则，支持精确匹配、模糊匹配和正则表达式
   - icon: ⌨️
     title: 键盘管理
-    details: 内联键盘和按钮配置，提供交互式用户界面
+    details: 内联键盘和按钮配置，提供交互式用户界面，支持动态键盘和状态切换
   - icon: 🔐
     title: 授权管理
-    details: 系统授权和许可证管理，完善的权限控制
+    details: 系统授权和许可证管理，完善的权限控制和访问审计，支持多级授权
+  - icon: 🚀
+    title: 快速部署
+    details: Docker 一键部署，几分钟内即可启动完整的系统，支持多种部署方式
+  - icon: 📱
+    title: 响应式设计
+    details: 支持多设备访问，完美适配桌面端、平板和移动设备，提供一致的用户体验
+  - icon: 🔒
+    title: 安全可靠
+    details: 完善的权限控制和数据加密，支持 HTTPS 和 API 限流，保障系统安全
+  - icon: 📈
+    title: 高性能
+    details: 基于 Nuxt 3 的 SSR 渲染，优化的数据库查询和缓存机制，支持高并发访问
+
 ---
+
+## 为什么选择 TGNL Admin？
+
+TGNL Admin 是一个专为 Telegram Bot 运营而设计的完整解决方案，提供了从机器人管理到数据分析的全套功能。
+
+### 开箱即用
+
+```bash
+# 一键启动
+docker compose up -d
+```
+
+几分钟内即可启动完整的系统，无需复杂的配置。
+
+### 功能完整
+
+- ✅ 多机器人管理
+- ✅ 用户数据统计
+- ✅ 订单处理流程
+- ✅ 自动化配置
+- ✅ 实时监控
+- ✅ 数据分析
+
+### 易于扩展
+
+系统采用模块化设计，功能清晰，易于扩展和维护。
+
+## 快速开始
+
+::: tip 提示
+如果你已经熟悉 Docker，可以直接使用快速启动命令。
+:::
+
+### 前置要求
+
+- Docker 和 Docker Compose
+- Telegram Bot Token
+- 5 分钟时间
+
+### 安装步骤
+
+1. **克隆项目**
+   ```bash
+   git clone https://github.com/yourusername/tgnl-admin.git
+   cd tgnl-admin
+   ```
+
+2. **配置环境**
+   ```bash
+   cp .env.example .env
+   # 编辑 .env 文件
+   ```
+
+3. **启动服务**
+   ```bash
+   docker compose up -d
+   ```
+
+4. **访问系统**
+   打开浏览器访问 `http://localhost:3000/admin`
+
+::: warning 注意
+首次启动需要下载镜像，可能需要几分钟时间。
+:::
+
+## 技术栈
+
+<div class="grid grid-cols-2 gap-4">
+
+<div>
+
+### 前端技术
+
+- **Nuxt 3** - Vue.js 框架
+- **Nuxt UI** - UI 组件库
+- **Tailwind CSS** - 样式框架
+- **Pinia** - 状态管理
+
+</div>
+
+<div>
+
+### 后端技术
+
+- **Nuxt Server API** - 后端 API
+- **MySQL** - 数据库
+- **Docker** - 容器化
+- **Python** - Bot 脚本
+
+</div>
+
+</div>
+
+## 社区和支持
+
+- 📖 [完整文档](/guide/getting-started)
+- 💬 [GitHub Issues](https://github.com/cnmbdb/nlbot-vitepress/issues)
+- 🐛 [报告问题](https://github.com/cnmbdb/nlbot-vitepress/issues/new)
+
+---
+
+<div class="text-center">
+
+**开始使用 TGNL Admin，让 Telegram Bot 管理变得简单高效！**
+
+[快速开始 →](/guide/getting-started)
+
+</div>

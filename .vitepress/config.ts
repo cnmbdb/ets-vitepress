@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  appearance: true,
   title: 'TGNL Admin 文档',
   description: 'Telegram Bot 管理后台完整文档',
   base: '/',
@@ -12,10 +13,15 @@ export default defineConfig({
 
   themeConfig: {
     logo: {
-      light: '/logo.png',
-      dark: '/logo.png'
+      light: '/logo.svg',
+      dark: '/logo.svg'
     },
-    siteTitle: 'TGNL Admin',
+    siteTitle: false,
+    
+    outline: {
+      level: [2, 3],
+      label: '页面导航'
+    },
     
     nav: [
       { text: '首页', link: '/' },
@@ -32,6 +38,12 @@ export default defineConfig({
       { text: '部署指南', link: '/deployment/' },
       { text: 'API 文档', link: '/api/' }
     ],
+    
+    sidebarMenuLabel: '菜单',
+    returnToTopLabel: '返回顶部',
+    darkModeSwitchLabel: '外观',
+    lightModeSwitchTitle: '切换到浅色模式',
+    darkModeSwitchTitle: '切换到深色模式',
 
     sidebar: {
       '/guide/': [
@@ -110,7 +122,24 @@ export default defineConfig({
     },
 
     search: {
-      provider: 'local'
+      provider: 'local',
+      options: {
+        translations: {
+          button: {
+            buttonText: '搜索文档',
+            buttonAriaLabel: '搜索文档'
+          },
+          modal: {
+            noResultsText: '无法找到相关结果',
+            resetButtonTitle: '清除查询条件',
+            footer: {
+              selectText: '选择',
+              navigateText: '切换',
+              closeText: '关闭'
+            }
+          }
+        }
+      }
     }
   }
 })

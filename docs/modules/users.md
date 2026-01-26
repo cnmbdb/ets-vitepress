@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # 用户管理
 
 用户管理模块用于查看和管理 Telegram Bot 的用户信息。

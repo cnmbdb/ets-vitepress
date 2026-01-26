@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # Docker 部署
 
 本文档介绍如何使用 Docker 部署 TGNL Admin 项目。

@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # 项目介绍
 
 TGNL Admin 是一个基于 Nuxt 3 构建的 Telegram Bot 管理后台系统，提供了完整的机器人管理、用户管理、订单管理等功能。

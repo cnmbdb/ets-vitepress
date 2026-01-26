@@ -1,1 +1,0 @@
-import{_ as a,o as i,c as n,ae as t}from"./chunks/framework.BD9pLfSD.js";const E=JSON.parse('{"title":"认证接口","description":"","frontmatter":{},"headers":[],"relativePath":"api/auth.md","filePath":"api/auth.md"}'),h={name:"api/auth.md"};function e(l,s,p,k,d,o){return i(),n("div",null,[...s[0]||(s[0]=[t("",33)])])}const c=a(h,[["render",e]]);export{E as __pageData,c as default};

@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # 命令管理
 
 命令管理模块用于配置 Telegram Bot 的命令和响应。

@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # 键盘按钮
 
 键盘按钮模块用于管理 Telegram Bot 的键盘按钮配置。

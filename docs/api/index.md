@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # API 文档
 
 TGNL Admin 提供了完整的 RESTful API 接口。
