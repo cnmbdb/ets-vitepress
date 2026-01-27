@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   lang: 'zh-CN',
-  title: 'TGNL Admin 文档',
+  title: 'TelegramPress',
   description: 'TGNL Admin 项目文档',
 
   // 多语言（右上角语言切换）

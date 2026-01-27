@@ -2,8 +2,8 @@
 layout: home
 
 hero:
-  name: VitePress
-  text: 由 Vite 和 Vue 驱动的静态站点生成器
+  name: TelegramPress
+  text: 由 Telegram和Vite 和 Vue和Nutx 驱动的静态产品站点生成器
   tagline: 将 Markdown 变成优雅的文档，只需几分钟
   image:
     src: /logo.png
