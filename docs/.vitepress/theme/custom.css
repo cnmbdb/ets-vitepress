@@ -76,12 +76,6 @@
   font-size: 1.12rem;
 }
 
-.VPHomeHero .image {
-  position: relative;
-  max-width: min(520px, 70vw); /* 桌面不超过 520px，窄屏按视口宽度收缩 */
-  margin: 0 auto;             /* 默认居中 */
-}
-
 .VPHomeHero .image::before {
   content: '';
   position: absolute;
@@ -93,19 +87,6 @@
   filter: none;
   transform: none;
   pointer-events: none;
-}
-
-.VPHomeHero .image img {
-  display: block;
-  width: 100%;   /* 按容器宽度自适应 */
-  height: auto;  /* 保持比例 */
-  border-radius: 36px;
-  clip-path: none;
-  position: relative;
-  z-index: 1;
-  transform: none;
-  box-shadow: none;
-  filter: none;
 }
 
 .VPFeatures {
