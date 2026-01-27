@@ -1,8 +1,11 @@
 import { defineConfig } from 'vitepress'
 
-// 基础站点配置：增加语言切换（locales）和版本下拉（themeConfig.nav）
 export default defineConfig({
-  // 多语言配置：会在右上角自动出现语言切换下拉
+  lang: 'zh-CN',
+  title: 'TGNL Admin 文档',
+  description: 'TGNL Admin 项目文档',
+
+  // 多语言（右上角语言切换）
   locales: {
     root: {
       label: '简体中文',
@@ -36,12 +39,12 @@ export default defineConfig({
   },
 
   themeConfig: {
-    // 顶部搜索输入框（带 cmd+k 快捷键）
+    // 顶部搜索输入框（Search ⌘K）
     search: {
       provider: 'local'
     },
 
-    // 顶部导航 + 版本号下拉
+    // 顶部导航 + 版本下拉
     nav: [
       { text: '指南', link: '/guide/introduction' },
       { text: '参考', link: '/api/' },

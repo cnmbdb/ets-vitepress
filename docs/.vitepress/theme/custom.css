@@ -114,3 +114,86 @@
   padding-bottom: 96px;
 }
 
+/* 移动端自适应：图片和标题居中，避免错位 */
+@media (max-width: 768px) {
+  .VPHomeHero {
+    padding: 40px 16px 48px;
+  }
+
+  .VPHomeHero .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .VPHomeHero .main {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .VPHomeHero .text {
+    font-size: 1.8rem; /* 标题变小一点，适配手机宽度 */
+  }
+
+  .VPHomeHero .tagline {
+    font-size: 1rem;
+  }
+
+  .VPHomeHero .actions {
+    justify-content: center;
+  }
+
+  .VPHomeHero .image {
+    max-width: 260px;
+    margin: 0 auto;
+  }
+
+  .VPHomeHero .image img {
+    transform: none;       /* 取消桌面端的偏移与放大 */
+    clip-path: inset(0);   /* 避免裁切导致的奇怪边缘 */
+    border-radius: 24px;
+  }
+}
+
+
+/* 移动端自适应：图片和标题居中，避免错位 */
+@media (max-width: 768px) {
+  .VPHomeHero {
+    padding: 40px 16px 48px;
+  }
+
+  .VPHomeHero .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .VPHomeHero .main {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .VPHomeHero .text {
+    font-size: 1.8rem; /* 标题变小一点，适配手机宽度 */
+  }
+
+  .VPHomeHero .tagline {
+    font-size: 1rem;
+  }
+
+  .VPHomeHero .actions {
+    justify-content: center;
+  }
+
+  .VPHomeHero .image {
+    max-width: 260px;
+    margin: 0 auto;
+  }
+
+  .VPHomeHero .image img {
+    transform: none;       /* 取消桌面端的偏移与放大 */
+    clip-path: inset(0);   /* 避免裁切导致的奇怪边缘 */
+    border-radius: 24px;
+  }
+}
+
