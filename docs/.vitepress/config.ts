@@ -195,7 +195,11 @@ export default defineConfig({
     outline: {
       level: [2, 3],
       label: '页面导航'
-    }
+    },
+    // 社交链接
+    socialLinks: [
+      { icon: 'github', link: 'https://hfz.pw' }
+    ]
   }
 })
 
