@@ -46,13 +46,6 @@ export default defineConfig({
 
     // 顶部导航 + 版本下拉
     nav: [
-      { text: '指南', link: '/guide/introduction' },
-      { text: '参考', link: '/api/' },
-      {
-        text: 'Vitejs 中文网',
-        link: 'https://vitejs.cn/vitepress/',
-        target: '_blank'
-      },
       {
         text: '1.3.2',
         items: [
