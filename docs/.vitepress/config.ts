@@ -22,27 +22,75 @@ export default defineConfig({
           }
         ],
         sidebar: {
-          '/guide/': [
+          '/': [
             {
-              text: '简介',
+              text: 'tgnl-admin',
               collapsed: false,
               items: [
-                { text: '项目介绍', link: '/guide/introduction' }
+                {
+                  text: '简介',
+                  collapsed: false,
+                  items: [
+                    { text: '项目介绍', link: '/guide/introduction' }
+                  ]
+                },
+                {
+                  text: '部署指南',
+                  collapsed: false,
+                  items: [
+                    { text: '快速开始', link: '/guide/getting-started' },
+                    { text: '配置指南', link: '/guide/configuration' }
+                  ]
+                },
+                {
+                  text: '使用手册',
+                  collapsed: false,
+                  items: [
+                    { text: '功能说明', link: '/guide/usage' }
+                  ]
+                }
               ]
             },
             {
-              text: '部署指南',
+              text: 'tgpro-admin',
               collapsed: false,
               items: [
-                { text: '快速开始', link: '/guide/getting-started' },
-                { text: '配置指南', link: '/guide/configuration' }
+                {
+                  text: '简介',
+                  collapsed: false,
+                  items: [
+                    { text: '项目介绍', link: '/tgpro-admin/introduction' }
+                  ]
+                },
+                {
+                  text: '部署指南',
+                  collapsed: false,
+                  items: [
+                    { text: '快速开始', link: '/tgpro-admin/getting-started' },
+                    { text: '配置指南', link: '/tgpro-admin/configuration' }
+                  ]
+                },
+                {
+                  text: '使用手册',
+                  collapsed: false,
+                  items: [
+                    { text: '功能说明', link: '/tgpro-admin/usage' }
+                  ]
+                }
               ]
             },
             {
-              text: '使用手册',
+              text: 'tgbot-store',
               collapsed: false,
               items: [
-                { text: '功能说明', link: '/guide/usage' }
+                { text: 'Introduction', link: '/tgbot-store/' }
+              ]
+            },
+            {
+              text: 'tgbot-Ultra',
+              collapsed: false,
+              items: [
+                { text: 'Introduction', link: '/tgbot-Ultra/' }
               ]
             }
           ]
