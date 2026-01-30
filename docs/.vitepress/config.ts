@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  base: '/ets-vitepress/',
   lang: 'zh-CN',
   title: 'TelegramPress',
   description: 'TGNL Admin 项目文档',
