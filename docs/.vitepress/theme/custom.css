@@ -318,4 +318,23 @@ body {
   background-color: #1b1b1f !important; /* 深色模式强制深色背景 */
 }
 
+/* 终极修复：覆盖 #app 容器和可能的全局背景色 */
+#app {
+  min-height: 100vh;
+  background-color: var(--vp-c-bg);
+}
+
+.dark #app {
+  background-color: #1b1b1f;
+}
+
+/* 强制清除任何可能的蓝色背景 */
+html, body, #app, .Layout, .VPContent {
+  background-color: var(--vp-c-bg) !important;
+}
+
+.dark html, .dark body, .dark #app, .dark .Layout, .dark .VPContent {
+  background-color: #1b1b1f !important;
+}
+
 
