@@ -1,7 +1,9 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  base: '/ets-vitepress/',
+  // 当使用自定义域名时，base 应该设置为 '/'（或者直接移除该行，因为默认就是 '/'）
+  // 之前的 '/ets-vitepress/' 仅适用于 github.io/repo-name 的情况
+  base: '/', 
   lang: 'zh-CN',
   head: [
     ['meta', { name: 'theme-color', content: '#ffffff' }],
