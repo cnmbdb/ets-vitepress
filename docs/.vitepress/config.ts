@@ -3,6 +3,21 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   base: '/ets-vitepress/',
   lang: 'zh-CN',
+  head: [
+    ['meta', { name: 'theme-color', content: '#ffffff' }],
+    // 适配深色模式的 theme-color
+    ['script', {}, `
+      (() => {
+        const updateThemeColor = () => {
+          const isDark = document.documentElement.classList.contains('dark');
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', isDark ? '#1b1b1f' : '#ffffff');
+        };
+        const observer = new MutationObserver(updateThemeColor);
+        observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+        updateThemeColor();
+      })()
+    `]
+  ],
   title: 'TelegramPress',
   description: 'TGNL Admin 项目文档',
 

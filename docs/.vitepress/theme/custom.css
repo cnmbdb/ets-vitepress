@@ -293,12 +293,14 @@
 
 /* 修复上下滑动时的背景色问题，去除蓝色底色 */
 html {
-  background-color: var(--vp-c-bg);
+  background-color: #ffffff; /* 浅色模式强制白色 */
+  height: 100%; /* 确保高度充满 */
 }
 
 body {
-  background-color: var(--vp-c-bg);
-  /* 防止 macOS/iOS 橡皮筋效果露出浏览器默认底色（通常是白色或蓝色） */
+  background-color: #ffffff; /* 浅色模式强制白色 */
+  height: 100%;
+  /* 防止 macOS/iOS 橡皮筋效果露出浏览器默认底色 */
   overscroll-behavior-y: none;
 }
 
@@ -309,8 +311,11 @@ body {
 }
 
 /* 确保深色模式下也是如此 */
-.dark html, .dark body {
-  background-color: var(--vp-c-bg);
+.dark html {
+  background-color: #1b1b1f !important; /* 深色模式强制深色背景 */
+}
+.dark body {
+  background-color: #1b1b1f !important; /* 深色模式强制深色背景 */
 }
 
 
