@@ -1,3 +1,0 @@
-# tgbot-store
-
-Coming soon...

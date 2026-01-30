@@ -1,3 +1,0 @@
-# tgbot-Ultra
-
-Coming soon...
