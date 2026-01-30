@@ -291,4 +291,26 @@
   border-top: 1px solid var(--vp-c-divider);
 }
 
+/* 修复上下滑动时的背景色问题，去除蓝色底色 */
+html {
+  background-color: var(--vp-c-bg);
+}
+
+body {
+  background-color: var(--vp-c-bg);
+  /* 防止 macOS/iOS 橡皮筋效果露出浏览器默认底色（通常是白色或蓝色） */
+  overscroll-behavior-y: none;
+}
+
+/* 强制去除顶部可能存在的蓝色边框或高亮条 */
+.VPNav, .VPLocalNav, .VPNavBar {
+  border-top-color: transparent !important;
+  background-color: var(--vp-c-bg) !important;
+}
+
+/* 确保深色模式下也是如此 */
+.dark html, .dark body {
+  background-color: var(--vp-c-bg);
+}
+
 
