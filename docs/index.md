@@ -2,39 +2,39 @@
 layout: home
 
 hero:
-  name: TelegramPress
-  text: 由 Telegram和Vite 和 Vue和Nutx 驱动的静态产品站点生成器
-  tagline: 将部署TelegramBOT+可视化后台变成更优雅的方式，只需几分钟
+  name: 独角数卡应用商店
+  text: 构建开放、安全、繁荣的开发者生态
+  tagline: 连接开发者与商户，打造功能无限扩展的数字商品销售平台
   image:
     src: /logo.png
-    alt: VitePress Logo
+    alt: Unicorn App Store
   actions:
     - theme: brand
-      text: 项目介绍
-      link: /guide/introduction
+      text: 了解项目
+      link: /guide/app-store-intro
     - theme: alt
-      text: 快速开始
-      link: /guide/getting-started
+      text: 开发者指南
+      link: /guide/app-store-dev-guide
     - theme: alt
       text: GitHub
       link: https://github.com/cnmbdb/hf-tgnl-admin
 
 features:
   - icon:
-      svg: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
-    title: 专为 Telegram Bot 打造
-    details: 深度集成 Telegram Bot API，为您的一键生成功能强大的管理后台，实现无缝对接与高效管理。
+      svg: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+    title: 开发者生态
+    details: 提供完善的开发者中心，支持应用上传、版本管理、销售数据分析，助力开发者变现。
   - icon:
-      svg: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
-    title: Nuxt 强力驱动
-    details: 基于 Nuxt.js 框架构建，享受服务端渲染带来的卓越性能与 SEO 优化，构建现代化的全栈应用。
+      svg: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+    title: 安全沙箱机制
+    details: 严格的权限控制与代码审计，确保第三方应用安全运行，保障商户数据与系统稳定。
   - icon:
-      svg: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
-    title: 方便可靠
-    details: 自动化一键部署流程，开箱即用。经过严格测试的稳定性保障，让您的后台管理既省心又安全。
+      svg: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+    title: 一键安装部署
+    details: 商户端提供类似 App Store 的丝滑体验，一键购买、安装、更新、卸载，自动处理依赖。
   - icon:
-      svg: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
-    title: 拥抱 Vite & Vue 生态
-    details: 采用最新的 Vue 3 和 Vite 技术栈，开发体验丝般顺滑，拥有丰富的组件库与插件生态支持。
+      svg: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+    title: 全球分发网络
+    details: 集成 CDN 加速与微服务架构，确保全球范围内的应用分发速度与高可用性。
 
 ---

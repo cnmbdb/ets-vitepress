@@ -42,8 +42,31 @@ export default defineConfig({
         sidebar: {
           '/': [
             {
-              text: 'tgnl-admin',
+              text: '项目概览',
               collapsed: false,
+              items: [
+                { text: '项目介绍', link: '/guide/app-store-intro' },
+                { text: '开发计划', link: '/guide/app-store-roadmap' }
+              ]
+            },
+            {
+              text: '功能与架构',
+              collapsed: false,
+              items: [
+                { text: '功能详解', link: '/guide/app-store-features' },
+                { text: '架构与安全', link: '/guide/app-store-architecture' }
+              ]
+            },
+            {
+              text: '开发者中心',
+              collapsed: false,
+              items: [
+                { text: '开发者指南', link: '/guide/app-store-dev-guide' }
+              ]
+            },
+            {
+              text: '旧版文档 (tgnl-admin)',
+              collapsed: true,
               items: [
                 {
                   text: '简介',
