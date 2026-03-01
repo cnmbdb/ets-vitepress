@@ -42,6 +42,14 @@ export default defineConfig({
         sidebar: {
           '/': [
             {
+              text: '快速开始',
+              collapsed: false,
+              items: [
+                { text: '快速部署', link: '/guide/quick-deployment' },
+                { text: '配置说明', link: '/guide/configuration-guide' }
+              ]
+            },
+            {
               text: '项目概览',
               collapsed: false,
               items: [
