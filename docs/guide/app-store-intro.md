@@ -14,16 +14,16 @@
 
 我们致力于打造一个多方共赢的生态系统：
 
-### 👨‍💻 对开发者
+### <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Man/Default/3D/man_3d_default.png" width="20" style="display:inline;vertical-align:bottom;" />‍<img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Laptop/3D/laptop_3d.png" width="20" style="display:inline;vertical-align:bottom;" /> 对开发者
 *   **便捷的上架流程**：提供标准化的应用打包、上传和发布工具。
 *   **广阔的市场**：直接触达独角数卡的庞大商户群体。
 *   **清晰的变现模式**：支持付费应用、订阅制等多种盈利模式，结算透明。
 
-### 🏪 对商户
+### <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Convenience store/3D/convenience_store_3d.png" width="20" style="display:inline;vertical-align:bottom;" /> 对商户
 *   **一站式获取功能**：在后台即可浏览、购买、安装各类插件，如支付网关、营销工具、模板主题等。
 *   **安全保障**：所有上架应用均经过严格的安全审核，确保无后门、无恶意代码。
 *   **便捷管理**：一键安装、自动更新、平滑卸载，降低运维成本。
 
-### 🚀 对平台
+### <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Rocket/3D/rocket_3d.png" width="20" style="display:inline;vertical-align:bottom;" /> 对平台
 *   **生态繁荣**：通过第三方开发者的加入，快速丰富平台功能，增加用户粘性。
 *   **持续创新**：激发社区活力，保持技术的先进性和敏捷性。

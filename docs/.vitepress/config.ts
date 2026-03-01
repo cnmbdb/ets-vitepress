@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   // 当使用自定义域名时，base 应该设置为 '/'（或者直接移除该行，因为默认就是 '/'）
   // 之前的 '/ets-vitepress/' 仅适用于 github.io/repo-name 的情况
-  base: '/', 
+  base: '/',
   lang: 'zh-CN',
   head: [
     ['meta', { name: 'theme-color', content: '#ffffff' }],
@@ -18,7 +18,9 @@ export default defineConfig({
         observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
         updateThemeColor();
       })()
-    `]
+    `],
+    // 引入 Fluent Emoji 3D 替换库
+    ['script', { src: 'https://emoji.fluent-cdn.com/latest/fluentemoji.min.js', crossorigin: 'anonymous' }]
   ],
   title: 'EtsPress',
   description: 'TGNL Admin 项目文档',
@@ -42,19 +44,19 @@ export default defineConfig({
         sidebar: {
           '/': [
             {
-              text: '快速开始',
-              collapsed: false,
-              items: [
-                { text: '快速部署', link: '/guide/quick-deployment' },
-                { text: '配置说明', link: '/guide/configuration-guide' }
-              ]
-            },
-            {
               text: '项目概览',
               collapsed: false,
               items: [
                 { text: '项目介绍', link: '/guide/app-store-intro' },
                 { text: '开发计划', link: '/guide/app-store-roadmap' }
+              ]
+            },
+            {
+              text: '快速开始',
+              collapsed: false,
+              items: [
+                { text: '快速部署', link: '/guide/quick-deployment' },
+                { text: '配置说明', link: '/guide/configuration-guide' }
               ]
             },
             {

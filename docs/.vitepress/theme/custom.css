@@ -187,13 +187,59 @@
   padding-top: 24px;
 }
 
-/* Sidebar 选中项高亮颜色（保持绿色） */
+/* 确保所有选中层级的文字都变绿 */
+.VPSidebarItem.is-active > .item > .link > .text {
+  color: var(--vp-c-brand-1) !important;
+  font-weight: 600;
+}
+
+/* 覆盖之前细分的 level 选择器，统一处理 */
 .VPSidebarItem.level-1.is-active > .item > .link > .text,
 .VPSidebarItem.level-2.is-active > .item > .link > .text,
 .VPSidebarItem.level-3.is-active > .item > .link > .text,
 .VPSidebarItem.level-4.is-active > .item > .link > .text,
 .VPSidebarItem.level-5.is-active > .item > .link > .text {
-  color: var(--vp-c-brand-1) !important;
+  /* color: var(--vp-c-brand-1) !important;  这里可以注释掉或者保留，因为上面已经覆盖了 */
+}
+
+/* 
+  左侧样式条 - 进阶版 (仿 Nuxt/VitePress 官方风格)
+*/
+
+/* 1. 给所有子菜单项的容器添加左侧灰色竖线 */
+.VPSidebarItem.level-0 .items {
+  border-left: 1px solid var(--vp-c-divider);
+  margin-left: 16px; /* 调整竖线与父级标题的对齐 */
+  padding-left: 16px; /* 子项与竖线的距离 */
+}
+
+/* 2. 选中项的高亮样式 */
+.VPSidebarItem.level-1.is-active > .item,
+.VPSidebarItem.level-2.is-active > .item,
+.VPSidebarItem.level-3.is-active > .item {
+  position: relative;
+  background-color: transparent !important;
+}
+
+/* 3. 使用伪元素制作绿色高亮线，覆盖在灰色线上 */
+.VPSidebarItem.level-1.is-active > .item::before,
+.VPSidebarItem.level-2.is-active > .item::before,
+.VPSidebarItem.level-3.is-active > .item::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -17px; /* 精准定位到灰色线的位置 (16px padding + 1px border) */
+  width: 2px;
+  height: 20px; /* 稍微缩短一点，不顶头 */
+  background-color: var(--vp-c-brand-1);
+  z-index: 10;
+}
+
+/* 移除之前的通用样式，避免冲突 */
+.VPSidebarItem.is-active > .item {
+  border-left: none !important;
+  background-color: transparent !important;
 }
 
 /* GitHub 按钮样式优化（Nuxt 风格绿色） */
