@@ -10,6 +10,10 @@ description: Dujiaoka-Next Docker 服务器快速部署流程（宝塔版）
 **`购买服务器`** ➔ **`购买域名`** ➔ **`宝塔安装环境`** (Docker/Nginx) ➔ **`上传源码`** ➔ **`一键启动`** ➔ **`配置域名与 SSL`** <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Rocket/3D/rocket_3d.png" width="20" style="display:inline;vertical-align:bottom;" />
 :::
 
+<br>
+
+<iframe src="//player.bilibili.com/player.html?bvid=BV1YxPKzeERW&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 100%; aspect-ratio: 16 / 9; border-radius: 8px; margin-bottom: 20px;"> </iframe>
+
 ## <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/World map/3D/world_map_3d.png" width="20" style="display:inline;vertical-align:bottom;" /> 架构总流程图
 
 <br>
