@@ -94,3 +94,53 @@ docker compose up -d --force-recreate
 ```
 
 执行后 Docker 会重新生成带有新环境变量的新容器替代表旧容器，你的配置才会真正生效！
+
+## <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Credit card/3D/credit_card_3d.png" width="20" style="display:inline;vertical-align:bottom;" /> 支付渠道配置
+
+目前系统支持多种支付方式，本节将详细说明各支付渠道的配置方法。
+
+### 支付宝 - 当面付 <Badge type="tip" text="推荐" />
+
+支付宝当面付是一种签约门槛较低、体验优秀的支付方式。经过测试，该配置已验证通过。
+
+::: info <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Information/3D/information_3d.png" width="20" style="display:inline;vertical-align:bottom;" /> 基础信息
+- **渠道类型**: 官方
+- **状态**: <Badge type="success" text="已测试成功" />
+:::
+
+#### 1. 支付宝官方配置
+
+你需要前往 [支付宝开放平台](https://open.alipay.com/) 获取以下关键信息：
+
+| 配置项 | 说明 | 获取方式 |
+| :--- | :--- | :--- |
+| **应用ID (AppID)** | 支付宝应用的唯一标识 | 应用详情页左上角 |
+| **应用私钥** | 用于签名的私钥 | 使用支付宝开发助手生成 |
+| **支付宝公钥** | 支付宝的公钥（非应用公钥） | 应用详情页 -> 开发设置 -> 接口加签方式 |
+
+::: details <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Key/3D/key_3d.png" width="20" style="display:inline;vertical-align:bottom;" /> 如何获取密钥？
+1. 下载并安装“支付宝开放平台开发助手”。
+2. 生成密钥对（应用私钥 + 应用公钥）。
+3. 在支付宝开放平台后台“接口加签方式”中设置“应用公钥”，随后平台会自动生成对应的**支付宝公钥**。
+4. 将**应用私钥**和**支付宝公钥**填入系统配置中。
+:::
+
+#### 2. 异步通知地址
+
+这是支付成功后，支付宝服务器通知我们系统发货的关键地址。
+
+::: tip <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Link/3D/link_3d.png" width="20" style="display:inline;vertical-align:bottom;" /> 配置格式
+请严格按照以下格式填写，确保公网可访问：
+
+```
+https://api容器的域名/api/v1/payments/callback
+```
+
+**示例**：如果你的 API 域名是 `api.example.com`，则填写：
+`https://api.example.com/api/v1/payments/callback`
+:::
+
+#### 3. 其他配置
+
+- 其余配置项保持**默认**即可，无需修改。
+
