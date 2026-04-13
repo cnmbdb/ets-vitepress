@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  base: '/ets-vitepress/',
+  base: '/',
   lang: 'zh-CN',
   head: [
     ['meta', { name: 'theme-color', content: '#ffffff' }],
