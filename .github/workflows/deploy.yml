@@ -46,10 +46,13 @@ jobs:
       - name: Build with VitePress
         run: npm run build
 
+      - name: Copy dist to root
+        run: cp -r docs/.vitepress/dist/* ./
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: docs/.vitepress/dist
+          path: ./
 
   # 部署工作
   deploy:
