@@ -101,6 +101,61 @@ export default defineConfig({
               ]
             },
             {
+              text: '已上线插件扩展',
+              collapsed: false,
+              items: [
+                {
+                  text: 'Wordpress',
+                  collapsed: false,
+                  items: [
+                    {
+                      text: '1. YingChun主题',
+                      collapsed: false,
+                      items: [
+                        { text: '程序介绍', link: '/plugins/wordpress/yingchun-theme/intro' }
+                      ]
+                    },
+                    {
+                      text: '2. 博客新闻文章机器人',
+                      collapsed: false,
+                      items: [
+                        { text: '程序介绍', link: '/plugins/wordpress/blog-news-bot/intro' }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  text: 'dujiao-next',
+                  collapsed: false,
+                  items: [
+                    { text: '1. 首页去广告页脚', link: '/plugins/dujiao-next/remove-ad-footer' },
+                    { text: '2. 发卡机器人', link: '/plugins/dujiao-next/faka-bot' },
+                    { text: '3. Yingchun主题', link: '/plugins/dujiao-next/yingchun-theme' },
+                    { text: '4. Alouer授权合约插件', link: '/plugins/dujiao-next/alouer-license' },
+                    { text: '5. AER流媒体账号合租主题', link: '/plugins/dujiao-next/aer-streaming' }
+                  ]
+                },
+                {
+                  text: '异次元发卡',
+                  collapsed: false,
+                  items: [
+                    { text: '1. YingChun主题', link: '/plugins/yiciyuan/yingchun-theme' },
+                    { text: '2. 发卡机器人', link: '/plugins/yiciyuan/faka-bot' },
+                    { text: '3. 对接某个上游A的API插件', link: '/plugins/yiciyuan/upstream-a-api' },
+                    { text: '4. 对接B上游的API插件', link: '/plugins/yiciyuan/upstream-b-api' }
+                  ]
+                },
+                {
+                  text: '智简魔方',
+                  collapsed: false,
+                  items: [
+                    { text: '1. YingChun主题', link: '/plugins/zhijianmofang/yingchun-theme' },
+                    { text: '2. tg机器人插件', link: '/plugins/zhijianmofang/tg-bot' }
+                  ]
+                }
+              ]
+            },
+            {
               text: '功能与架构',
               collapsed: false,
               items: [
