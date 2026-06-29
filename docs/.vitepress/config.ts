@@ -31,11 +31,53 @@ export default defineConfig({
       themeConfig: {
         nav: [
           {
-            text: '1.3.2',
+            text: '首页',
             items: [
-              { text: '1.3.2（当前）', link: '/' },
-              { text: '1.3.1', link: '/' },
-              { text: '1.3.0', link: '/' }
+              { text: '网站首页', link: '/' },
+              { text: 'HF-Web', link: '/' }
+            ]
+          },
+          {
+            text: '商城首页',
+            items: [
+              { text: '产品', link: '/guide/app-store-intro' },
+              { text: 'Token API', link: '/guide/app-store-features' },
+              { text: 'TelegramBot', link: '/guide/app-store-architecture' },
+              { text: 'ETS插件扩展平台', link: '/guide/app-store-dev-guide' },
+              { text: '服务器 / VPS', link: '/guide/app-store-roadmap' }
+            ]
+          },
+          {
+            text: '教程导航',
+            items: [
+              { text: '基础教学', link: '/guide/quick-deployment' },
+              { text: '发卡网站', link: '/guide/configuration-guide' },
+              { text: '收款 / 支付程序', link: '/guide/app-store-intro' },
+              { text: 'WordPress', link: '/guide/app-store-features' },
+              { text: 'HTML', link: '/guide/app-store-architecture' },
+              { text: 'WHMCS', link: '/guide/app-store-dev-guide' },
+              { text: 'Telegram机器人', link: '/guide/app-store-roadmap' },
+              { text: 'ChatGPT', link: '/guide/quick-deployment' }
+            ]
+          },
+          {
+            text: '合作',
+            items: [
+              { text: '担保合作平台', link: '/guide/configuration-guide' },
+              { text: '入驻 / 发布教程', link: '/guide/app-store-intro' },
+              { text: '克隆代理本站', link: '/guide/app-store-features' }
+            ]
+          },
+          {
+            text: '平台入口',
+            items: [
+              { text: '自由货源平台', link: '/guide/app-store-architecture' }
+            ]
+          },
+          {
+            text: '在线联系',
+            items: [
+              { text: 'Telegram客服', link: '/guide/app-store-dev-guide' }
             ]
           }
         ],
