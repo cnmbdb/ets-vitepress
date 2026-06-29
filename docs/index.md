@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: 独角数卡应用商店
+  name: EtsPress扩展应用插件平台
   text: 构建开放、安全、繁荣的开发者生态
   tagline: 连接开发者与商户，打造功能无限扩展的数字商品销售平台
   image:
