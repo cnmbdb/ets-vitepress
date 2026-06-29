@@ -442,10 +442,28 @@ html, body, #app, .Layout, .VPContent {
 
 /* 移动端标题样式调整 */
 @media (max-width: 768px) {
+  /* 导航栏容器 - 确保flex布局 */
+  .VPNavBar {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* 导航栏内容区域 - 水平对齐 */
+  .VPNavBar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  /* 标题区域 */
   .VPNavBarTitle {
     min-width: auto;
     padding-left: 0;
     gap: 8px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
   }
 
   .VPNavBarTitle .title {
@@ -453,13 +471,39 @@ html, body, #app, .Layout, .VPContent {
     left: auto;
     transform: none;
     text-align: left;
-    display: block;
+    display: flex;
+    align-items: center;
     margin: 0;
+    line-height: 1;
   }
   
-  /* 确保汉堡菜单正常显示 */
+  /* 右侧操作区域 - 确保垂直居中 */
+  .VPNavBarActions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+  
+  /* 搜索按钮对齐 */
+  .VPNavBar .VPSearch {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+  }
+  
+  /* 主题切换按钮对齐 */
+  .VPSwitch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* 汉堡菜单按钮对齐 */
   .VPNavBarHamburger {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   /* 移动端导航菜单样式 */
