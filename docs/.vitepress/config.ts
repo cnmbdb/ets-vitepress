@@ -181,7 +181,7 @@ export default defineConfig({
       link: '/en/',
       themeConfig: {
         nav: sharedNav,
-        sidebar: {}
+        sidebar: zhSidebar
       }
     },
     'zh-TW': {
@@ -190,7 +190,7 @@ export default defineConfig({
       link: '/zh-tw/',
       themeConfig: {
         nav: sharedNav,
-        sidebar: {}
+        sidebar: zhSidebar
       }
     },
     ja: {
@@ -199,7 +199,7 @@ export default defineConfig({
       link: '/ja/',
       themeConfig: {
         nav: sharedNav,
-        sidebar: {}
+        sidebar: zhSidebar
       }
     },
     ru: {
@@ -208,7 +208,7 @@ export default defineConfig({
       link: '/ru/',
       themeConfig: {
         nav: sharedNav,
-        sidebar: {}
+        sidebar: zhSidebar
       }
     },
     ko: {
@@ -217,7 +217,7 @@ export default defineConfig({
       link: '/ko/',
       themeConfig: {
         nav: sharedNav,
-        sidebar: {}
+        sidebar: zhSidebar
       }
     },
     hi: {
@@ -226,7 +226,7 @@ export default defineConfig({
       link: '/hi/',
       themeConfig: {
         nav: sharedNav,
-        sidebar: {}
+        sidebar: zhSidebar
       }
     }
   },
