@@ -442,68 +442,59 @@ html, body, #app, .Layout, .VPContent {
 
 /* 移动端标题样式调整 */
 @media (max-width: 768px) {
-  /* 导航栏容器 - 确保flex布局 */
+  /* 导航栏容器 */
   .VPNavBar {
-    display: flex;
-    align-items: center;
+    display: flex !important;
+    align-items: center !important;
   }
   
-  /* 导航栏内容区域 - 水平对齐 */
-  .VPNavBar .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+  /* 导航栏内容区域 */
+  .VPNavBar > .container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
   }
   
   /* 标题区域 */
   .VPNavBarTitle {
-    min-width: auto;
-    padding-left: 0;
-    gap: 8px;
-    display: flex;
-    align-items: center;
-    flex-shrink: 0;
+    min-width: auto !important;
+    padding-left: 0 !important;
+    gap: 8px !important;
+    display: flex !important;
+    align-items: center !important;
+    flex-shrink: 0 !important;
   }
 
   .VPNavBarTitle .title {
-    position: relative;
-    left: auto;
-    transform: none;
-    text-align: left;
-    display: flex;
-    align-items: center;
-    margin: 0;
-    line-height: 1;
+    position: relative !important;
+    left: auto !important;
+    transform: none !important;
+    text-align: left !important;
+    display: flex !important;
+    align-items: center !important;
+    margin: 0 !important;
+    line-height: 1 !important;
   }
   
-  /* 右侧操作区域 - 确保垂直居中 */
-  .VPNavBarActions {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    flex-shrink: 0;
+  /* 右侧内容区域 - 强制靠右 */
+  .VPNavBar .content-body {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 8px !important;
+    flex-shrink: 0 !important;
+    margin-left: auto !important;
+    position: relative !important;
+    right: 0 !important;
   }
   
-  /* 搜索按钮对齐 */
-  .VPNavBar .VPSearch {
-    display: flex;
-    align-items: center;
-    margin-left: 0;
-  }
-  
-  /* 主题切换按钮对齐 */
-  .VPSwitch {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  /* 汉堡菜单按钮对齐 */
-  .VPNavBarHamburger {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  /* 汉堡菜单按钮 */
+  .VPNavBar .VPNavBarHamburger {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-shrink: 0 !important;
   }
   
   /* 移动端导航菜单样式 */
