@@ -1,9 +1,9 @@
 ---
 title: 快速部署页面
-description: Dujiaoka-Next Docker 服务器快速部署流程（宝塔版）
+description: dujiao-next Docker 服务器快速部署流程（宝塔版）
 ---
 
-# Dujiaoka-Next 快速部署指南 <Badge type="tip" text="最新版" />
+# dujiao-next 快速部署指南 <Badge type="tip" text="最新版" />
 
 ::: tip <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Light bulb/3D/light_bulb_3d.png" width="20" style="display:inline;vertical-align:bottom;" /> 核心流程概述
 这份文档按照实际操作路径编写，专为快速部署设计：
@@ -70,7 +70,7 @@ flowchart TD
 ### 1. 获取并解压源码
 
 - 前往官方开源仓库下载最新版源码包：[Releases 下载页面](https://github.com/cnmbdb/Dujiaoka-Next-Docker/releases) <Badge type="info" text="GitHub" />。
-- 在宝塔面板的 **“文件”** 页面，将压缩包直接上传至你的站点存放目录（例如 `/www/wwwroot/dujiaoka-next`）。
+- 在宝塔面板的 **“文件”** 页面，将压缩包直接上传至你的站点存放目录（例如 `/www/wwwroot/dujiao-next`）。
 - 将压缩包当场解压倒该项目目录中。
 - <Badge type="danger" text="必须操作" /> **修改权限**：按照项目运行要求，必须把项目根目录的所有者及读写权限统一修正为 `www / 777`。
 

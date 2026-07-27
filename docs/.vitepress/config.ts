@@ -1,59 +1,5 @@
 import { defineConfig } from 'vitepress'
 
-const sharedNav = [
-  {
-    text: '首页',
-    items: [
-      { text: '网站首页', link: 'https://hfz.pw/home' },
-      { text: 'HF-Web', link: 'https://hfz.pw/' },
-      { text: '商城首页', link: 'https://hfz.pw/shop' }
-    ]
-  },
-  {
-    text: '产品',
-    items: [
-      { text: 'Token API', link: 'https://token.macosabc.com/' },
-      { text: 'TelegramBot', link: 'https://telegrampress.hfz.pw/' },
-      { text: 'ETS插件扩展平台', link: 'https://dujiaoka-ets.hfz.pw/' },
-      { text: '服务器 / VPS', link: 'https://cloud.hfz.pw/' }
-    ]
-  },
-  {
-    text: '教程导航',
-    items: [
-      { text: '基础教学', link: 'https://hfz.pw/' },
-      { text: '发卡网站', link: 'https://hfz.pw/' },
-      { text: '收款 / 支付程序', link: 'https://hfz.pw/' },
-      { text: 'WordPress', link: 'https://hfz.pw/' },
-      { text: 'HTML', link: 'https://hfz.pw/' },
-      { text: 'WHMCS', link: 'https://hfz.pw/' },
-      { text: 'Telegram机器人', link: 'https://hfz.pw/' },
-      { text: 'ChatGPT', link: 'https://hfz.pw/' }
-    ]
-  },
-  {
-    text: '合作',
-    items: [
-      { text: '担保合作平台', link: 'https://hfz.pw/' },
-      { text: '入驻 / 发布教程', link: 'https://hfz.pw/' },
-      { text: '克隆代理本站', link: 'https://hfz.pw/' }
-    ]
-  },
-  {
-    text: '平台入口',
-    items: [
-      { text: '自由货源平台', link: 'https://hfz.pw/' },
-      { text: '商城首页', link: 'https://store.hfz.pw/' }
-    ]
-  },
-  {
-    text: '在线联系',
-    items: [
-      { text: 'Telegram客服', link: 'https://t.me/HFTGID' }
-    ]
-  }
-]
-
 const zhSidebar = {
   '/': [
     {
@@ -62,14 +8,6 @@ const zhSidebar = {
       items: [
         { text: '项目介绍', link: '/guide/app-store-intro' },
         { text: '开发计划', link: '/guide/app-store-roadmap' }
-      ]
-    },
-    {
-      text: '快速开始',
-      collapsed: false,
-      items: [
-        { text: '快速部署', link: '/guide/quick-deployment' },
-        { text: '配置说明', link: '/guide/configuration-guide' }
       ]
     },
     {
@@ -100,6 +38,15 @@ const zhSidebar = {
           text: 'dujiao-next',
           collapsed: false,
           items: [
+            {
+              text: '快速开始',
+              collapsed: false,
+              items: [
+                { text: '快速部署', link: '/guide/quick-deployment' },
+                { text: '应用扩展商店安装', link: '/guide/app-store-installation' },
+                { text: '配置说明', link: '/guide/configuration-guide' }
+              ]
+            },
             { text: '1. 首页去广告页脚', link: '/plugins/dujiao-next/remove-ad-footer' },
             { text: '2. 发卡机器人', link: '/plugins/dujiao-next/faka-bot' },
             { text: '3. Yingchun主题', link: '/plugins/dujiao-next/yingchun-theme' },
@@ -171,7 +118,6 @@ export default defineConfig({
       label: '简体中文',
       lang: 'zh-CN',
       themeConfig: {
-        nav: sharedNav,
         sidebar: zhSidebar
       }
     },
@@ -180,7 +126,6 @@ export default defineConfig({
       lang: 'en',
       link: '/en/',
       themeConfig: {
-        nav: sharedNav,
         sidebar: zhSidebar
       }
     },
@@ -189,7 +134,6 @@ export default defineConfig({
       lang: 'zh-TW',
       link: '/zh-tw/',
       themeConfig: {
-        nav: sharedNav,
         sidebar: zhSidebar
       }
     },
@@ -198,7 +142,6 @@ export default defineConfig({
       lang: 'ja',
       link: '/ja/',
       themeConfig: {
-        nav: sharedNav,
         sidebar: zhSidebar
       }
     },
@@ -207,7 +150,6 @@ export default defineConfig({
       lang: 'ru',
       link: '/ru/',
       themeConfig: {
-        nav: sharedNav,
         sidebar: zhSidebar
       }
     },
@@ -216,7 +158,6 @@ export default defineConfig({
       lang: 'ko',
       link: '/ko/',
       themeConfig: {
-        nav: sharedNav,
         sidebar: zhSidebar
       }
     },
@@ -225,7 +166,6 @@ export default defineConfig({
       lang: 'hi',
       link: '/hi/',
       themeConfig: {
-        nav: sharedNav,
         sidebar: zhSidebar
       }
     }
@@ -244,4 +184,3 @@ export default defineConfig({
     ]
   }
 })
-

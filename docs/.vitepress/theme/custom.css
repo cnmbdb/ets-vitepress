@@ -25,6 +25,28 @@
   --vp-c-brand-3: #00a855;
 }
 
+.plugin-download-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  max-width: 100%;
+  padding: 0 18px;
+  border-radius: 4px;
+  background-color: var(--vp-c-brand-1);
+  color: #0f172a !important;
+  font-weight: 600;
+  line-height: 1.4;
+  text-decoration: none !important;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.plugin-download-button:hover {
+  background-color: var(--vp-c-brand-2);
+  color: #0f172a !important;
+  transform: translateY(-1px);
+}
+
 /* 首页 Hero 大标题颜色：强制使用主题绿 */
 .VPHomeHero .name,
 .dark .VPHomeHero .name {
@@ -343,6 +365,63 @@
   border-top: 1px solid var(--vp-c-divider);
 }
 
+/* Dujiao Bot 文档展示图：桌面端与移动端均保持两列。 */
+.dujiao-bot-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 24px 0 32px;
+}
+
+.dujiao-bot-gallery figure {
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 6px;
+  background: var(--vp-c-bg-soft);
+}
+
+.dujiao-bot-gallery a {
+  display: flex;
+  aspect-ratio: 16 / 9;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: var(--vp-c-bg-alt);
+}
+
+.dujiao-bot-gallery img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: 0;
+  object-fit: contain;
+}
+
+.dujiao-bot-gallery figcaption {
+  padding: 8px 10px;
+  border-top: 1px solid var(--vp-c-divider);
+  color: var(--vp-c-text-2);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .dujiao-bot-gallery {
+    gap: 8px;
+    margin: 18px 0 24px;
+  }
+
+  .dujiao-bot-gallery figcaption {
+    padding: 6px 4px;
+    font-size: 11px;
+  }
+}
+
 /* 修复上下滑动时的背景色问题，去除蓝色底色 */
 html {
   background-color: #ffffff; /* 浅色模式强制白色 */
@@ -449,10 +528,27 @@ html, body, #app, .Layout, .VPContent {
   }
   
   /* 导航栏内容区域 */
-  .VPNavBar > .container {
+  .VPNavBar .wrapper,
+  .VPNavBar .container {
+    max-width: none !important;
     display: flex !important;
     align-items: center !important;
+    width: 100% !important;
+  }
+
+  .VPNavBar .wrapper {
+    flex: 1 1 auto !important;
+  }
+
+  .VPNavBar .container {
     justify-content: space-between !important;
+  }
+
+  .VPNavBar > .divider {
+    position: absolute !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
     width: 100% !important;
   }
   
@@ -478,12 +574,18 @@ html, body, #app, .Layout, .VPContent {
   }
   
   /* 右侧内容区域 - 强制靠右 */
+  .VPNavBar .content {
+    min-width: 0 !important;
+    flex: 1 1 auto !important;
+  }
+
   .VPNavBar .content-body {
     display: flex !important;
     align-items: center !important;
     justify-content: flex-end !important;
+    width: 100% !important;
     gap: 8px !important;
-    flex-shrink: 0 !important;
+    flex: 1 1 auto !important;
     margin-left: auto !important;
     position: relative !important;
     right: 0 !important;
@@ -495,6 +597,7 @@ html, body, #app, .Layout, .VPContent {
     align-items: center !important;
     justify-content: center !important;
     flex-shrink: 0 !important;
+    margin-left: auto !important;
   }
   
   /* 移动端导航菜单样式 */
@@ -547,4 +650,3 @@ html, body, #app, .Layout, .VPContent {
 .VPMenu .item:hover .text {
   color: var(--vp-c-brand-1);
 }
-

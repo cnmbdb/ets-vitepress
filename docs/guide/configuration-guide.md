@@ -1,9 +1,9 @@
 ---
 title: 配置说明
-description: Dujiaoka-Next 环境变量与配置项详解
+description: dujiao-next 环境变量与配置项详解
 ---
 
-# Dujiaoka-Next 环境配置指南
+# dujiao-next 环境配置指南
 
 ::: tip <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Light bulb/3D/light_bulb_3d.png" width="20" style="display:inline;vertical-align:bottom;" /> 核心配置文件解析
 本项目的所有系统关键配置都集中在根目录下的唯一环境变量文件 `.env` 中。此设计极大地方便了使用 Docker 部署用户进行快速的业务参数调整。如果你通过 Git Clone 源码的方式部署，需要自己复制 `.env.example` -> `.env`；使用预构建的发布包时则可能已附带或需要手动创建。
@@ -143,4 +143,3 @@ https://api容器的域名/api/v1/payments/callback
 #### 3. 其他配置
 
 - 其余配置项保持**默认**即可，无需修改。
-
