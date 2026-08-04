@@ -1,30 +1,62 @@
-# 开发计划 (Roadmap)
+---
+title: 开发计划
+description: ETSPress 多平台扩展插件平台的当前进展与阶段性建设计划
+---
 
-我们将分三个阶段逐步完善应用商店生态。
+# ETSPress 开发计划
 
-## Phase 1：MVP (最小可行性产品)
-**周期：4-6周**
+ETSPress 将围绕“多平台接入、插件内容完善、统一发布标准和开发者生态”持续建设。以下计划用于说明产品方向，实际优先级会根据插件上线进度、平台兼容性与用户反馈动态调整。
 
-*   <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Check mark button/3D/check_mark_button_3d.png" width="20" style="display:inline;vertical-align:bottom;" /> **开发者入驻**：基础注册流程，实名认证。
-*   <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Check mark button/3D/check_mark_button_3d.png" width="20" style="display:inline;vertical-align:bottom;" /> **应用管理**：简单的上传、编辑和上架流程。
-*   <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Check mark button/3D/check_mark_button_3d.png" width="20" style="display:inline;vertical-align:bottom;" /> **商店前台**：基础的浏览、搜索和详情页展示。
-*   <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Check mark button/3D/check_mark_button_3d.png" width="20" style="display:inline;vertical-align:bottom;" /> **人工审核**：后台审核队列，手动处理上架申请。
-*   <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Check mark button/3D/check_mark_button_3d.png" width="20" style="display:inline;vertical-align:bottom;" /> **基础购买**：支持余额购买和一键安装。
+## 当前阶段：多平台内容基础
 
-## Phase 2：生态完善
-**周期：8-10周**
+当前重点是让已上线插件能够被准确找到、理解和使用。
 
-*   <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Construction/3D/construction_3d.png" width="20" style="display:inline;vertical-align:bottom;" /> **自动化审核**：引入代码静态扫描工具，提升审核效率。
-*   <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Construction/3D/construction_3d.png" width="20" style="display:inline;vertical-align:bottom;" /> **评价系统**：用户评分与评论功能，建立信用体系。
-*   <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Construction/3D/construction_3d.png" width="20" style="display:inline;vertical-align:bottom;" /> **数据分析**：开发者数据看板，展示下载量与收入。
-*   <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Construction/3D/construction_3d.png" width="20" style="display:inline;vertical-align:bottom;" /> **推荐算法**：基于用户行为的热门应用推荐。
-*   <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Construction/3D/construction_3d.png" width="20" style="display:inline;vertical-align:bottom;" /> **结算系统**：自动化的开发者收入结算与提现流程。
+- [x] 建立 ETSPress 多平台扩展插件平台的统一定位。
+- [x] 接入 WordPress、Dujiao Next、异次元发卡和智简魔方四个平台。
+- [x] 整理 13 款已上线主题与功能插件。
+- [x] 按平台建立插件文档目录和基础介绍页面。
+- [x] 为部分插件补充安装、配置、运行检查和故障排查说明。
+- [ ] 继续校对插件名称、截图、版本信息与实际功能的一致性。
+- [ ] 为现有插件补齐适用版本、依赖项、更新记录和已知限制。
 
-## Phase 3：高级功能
-**周期：6-8周**
+## 近期计划：完善浏览与使用体验
 
-*   <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Calendar/3D/calendar_3d.png" width="20" style="display:inline;vertical-align:bottom;" /> **应用内购买 (IAP)**：支持应用内解锁高级功能。
-*   <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Calendar/3D/calendar_3d.png" width="20" style="display:inline;vertical-align:bottom;" /> **订阅制**：支持按月/按年付费的 SaaS 模式应用。
-*   <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Calendar/3D/calendar_3d.png" width="20" style="display:inline;vertical-align:bottom;" /> **组合包 (Bundles)**：多个应用打包优惠购买。
-*   <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Calendar/3D/calendar_3d.png" width="20" style="display:inline;vertical-align:bottom;" /> **API 市场**：不仅是应用，还支持 API 接口的交易。
-*   <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Calendar/3D/calendar_3d.png" width="20" style="display:inline;vertical-align:bottom;" /> **协作工具**：支持团队开发，多人管理同一个应用账号。
+这一阶段优先解决“插件是否适用、怎样安装、出了问题怎样处理”。
+
+- 为每个已支持平台建立独立的插件总览页面。
+- 统一插件详情页结构，展示平台、分类、版本、兼容范围与维护状态。
+- 增加主题、机器人、业务工具、API 对接等分类入口。
+- 完善站内搜索、相关插件推荐和平台间导航。
+- 为安装、更新、停用、卸载和数据保留建立统一说明模板。
+- 补充更多真实界面截图、使用示例和常见问题。
+- 持续接入新的平台与高需求插件类型。
+
+## 中期计划：建立统一发布标准
+
+在内容体系稳定后，逐步规范插件从开发到发布的全过程。
+
+- 制定跨平台插件元数据规范，包括唯一标识、版本号、宿主平台和依赖声明。
+- 建立兼容性矩阵，明确插件与宿主系统版本之间的适配关系。
+- 规范安装包结构、升级脚本、卸载行为与数据保留策略。
+- 增加版本历史、更新日志和重要升级提示。
+- 建立插件提交、内容审核和发布状态管理流程。
+- 引入基础自动检查，验证安装包结构、必要文件和高风险配置。
+- 完善开发者指南与示例项目，降低新插件接入成本。
+
+## 长期计划：建设开发者与分发生态
+
+长期目标是让 ETSPress 从插件文档中心发展为完整的多平台扩展服务。
+
+- 建设开发者中心，支持插件资料、版本和发布记录管理。
+- 提供更完整的插件发现、筛选、收藏与更新提醒能力。
+- 根据不同宿主平台的技术条件，探索标准化安装与更新流程。
+- 建立安全审查、兼容性测试和问题反馈机制。
+- 支持团队协作、维护者管理与插件生命周期管理。
+- 在条件成熟后评估授权、付费、订阅和开发者结算能力。
+- 建立公开的接入规范，让更多平台和开发者参与生态建设。
+
+## 规划边界
+
+开发者中心、自动安装、自动审核、付费与结算等功能属于后续规划，不代表当前已经提供。现阶段请以各插件文档中明确说明的安装方式、兼容范围和可用功能为准。
+
+我们会优先完成能够直接改善插件发现、安装和使用体验的事项，再逐步扩展平台能力。
