@@ -110,8 +110,8 @@ export default defineConfig({
     `],
     ['script', { src: 'https://emoji.fluent-cdn.com/latest/fluentemoji.min.js', crossorigin: 'anonymous' }]
   ],
-  title: 'EtsPress',
-  description: 'TGNL Admin 项目文档',
+  title: 'ETSPress',
+  description: '面向 WordPress、Dujiao Next、异次元发卡与智简魔方的多平台扩展插件平台',
 
   locales: {
     root: {
