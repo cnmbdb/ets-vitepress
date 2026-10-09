@@ -3,7 +3,13 @@ title: 快速部署页面
 description: dujiao-next Docker 服务器快速部署流程（宝塔版）
 ---
 
+<script setup>
+import HostedDeployment from '../.vitepress/theme/components/HostedDeployment.vue'
+</script>
+
 # dujiao-next 快速部署指南 <Badge type="tip" text="最新版" />
+
+<HostedDeployment />
 
 ::: tip <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Light bulb/3D/light_bulb_3d.png" width="20" style="display:inline;vertical-align:bottom;" /> 核心流程概述
 这份文档按照实际操作路径编写，专为快速部署设计：
